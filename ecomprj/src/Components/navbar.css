@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: #304945;
+  }
+  header {
+    background-color: #f2efeb;
+    padding-top: 0px;
+  }
+  
+  .nav {
+    display: flex;
+    background-color: #f2efeb;
+    justify-content: space-between;
+    padding: 1rem;
+    top: 0;
+    height: 40px;
+    border-bottom: 1px solid #304945;
+  }
+  .nav ul {
+    display: flex;
+    align-items: center;
+    padding-left: 37%;
+    list-style: none;
+  }
+  .nav li {
+    Font-family: 'Saira Condensed';
+  }
+  nav li a {
+    /* text-decoration-style: ; */
+    padding: 1rem;
+    font-family: 'Saira Condensed';
+    font-size: 2rem;
+    color: #304945;
+    align-items: center;
+    text-decoration: none;
+  }
+  nav li a:hover {
+    color: darkorange;
+    }

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Saira Condensed'; */
+  }
+  body {
+    background-color: #f2efeb;
+  }
+  header {
+    background-color:#f2efeb;
+    padding-top: 0px;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #f2efeb;
+    justify-content: space-between;
+    padding: 1rem;
+    top: 0;
+    height: 40px;
+    border-bottom: 1px solid #304945;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    padding-left: 37%;
+    list-style: none;
+  }
+  nav li {
+    Font-family: 'Saira Condensed';
+  }
+  nav li a {
+    /* text-decoration-style: ; */
+    padding: 1rem;
+    font-family: 'Saira Condensed';
+    font-size: 2rem;
+    color: #304945;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  nav li a {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #304945;
+    align-items: center;
+  }
+  nav li a:hover {
+    color: darkorange;
+    }
+    
+  .grid-Container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5%;
+    grid-gap: 10px;
+    justify-items: center;
+    background-color: #f2efeb;
+  }
+  .gridpack-item {
+    text-align: center;
+  }
+  img {
+    height: 200px;
+    width: 250px;
+    /* display: center; */
+    padding-top: 15px;
+  }
+  .card {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 420px;
+    width: 300px;
+  }
+  .card:hover {
+    box-shadow: 0px 8px 16px 2px #304945;
+  }
+  
+  button {
+    margin-top: 20%;
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 7px;
+  }
+  button:hover {
+    box-shadow: 0px 8px 16px 2px;
+  }
+  
+  .footer {
+    display: flex;
+    /* align-items: center; */
+    background-color: #f2efeb;
+    padding: 1rem;
+    border-top: 1px solid #304945;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    padding-left: 10%;
+    margin: 20px;
+    color: #304945;;
+    justify-items: center;
+  }
+  
+  /* Style all font awesome icons */
+  .fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    padding-left: 50px;
+  }
+  .social {
+    height: 70px;
+    width: 70px;
+  }
+  @media screen and (max-width: 375px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        list-style: none;
+      }
+    
+      nav li a {
+        /* text-decoration-style: ; */
+        padding: 1rem;
+        font-size: 25px;
+        color: black;
+        align-items: center;
+      }
+      p {
+        text-align: center;
+        font-family: Didot, serif;
+      }
+      .grid-Container {
+        display: grid;
+        grid-template-columns: auto auto ;
+        margin: 5%;
+        grid-gap: 10px;
+        justify-items: center;
+      }
+      .gridpack-item {
+        font-size: 13px;
+      }
+      img {
+        height: 70px;
+        width: 70px;
+        padding-top: 15px;
+      }
+      .card {
+        background-color: white;
+        color: black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        height: 290px;
+        width: 150px;
+      }
+      button {
+        background-color: white;
+        height: 40px;
+        width: 90px;
+        border-radius: 20px;
+      }
+      
+  }
+  
