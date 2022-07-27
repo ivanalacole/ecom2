@@ -1,0 +1,35 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    text-align: left;
+}
+.footer-container {
+    
+    padding: 25px 50px;
+    margin-left: 32%;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: black;
+  }
+  
+  a.facebook {
+    color: black;
+  }
+  
+  a.twitter {
+    color: black;
+  }
+  
+  a.instagram {
+    color: black;
+  }

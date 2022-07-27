@@ -1,16 +1,26 @@
+import React,{useState, useEffect} from "react"
+import axios from 'axios'
 import "../App.css"
 export default function Products() {
-    return <div className="grid-Container">
-    <div className="gridpack-item">
-      <div className="card">
-        <img src="https://m.media-amazon.com/images/I/512O+J0XbHS._AC_SS450_.jpg" alt="Wick Trimmer" />
-        <h2>Wick Trimmer</h2>
-        <p>Trim your wick with our fabulous matte wick trimmer.</p>
-        <p>$20.00</p>
-        <button>Buy Now</button>
-      </div>
-    </div>
-    <div className="gridpack-item">
+    const [products, setProducts] = useState([])
+    useEffect(()=>{
+        axios.get('https://ul9bik9mdg.execute-api.us-east-1.amazonaws.com/dev/products')
+        .then(res => setProducts(res.data))
+    })
+    //setting state to get products back from api(db)
+    return (<><div className="grid-Container">
+    {/* <div className="gridpack-item"> */}
+      {/* <div className="card"> */}
+          {products.map(x => <div  className="gridpack-item card" key={x.ProductsId}>
+        <img src={x.ProductImage} alt="Wick Trimmer"/>
+        <h2>{x.ProductsName}</h2>
+        <p>{x.ProductsDescription}</p>
+        <p>{x.ProductsPrice}</p>
+        <button>Buy Now</button></div>)}
+        </div>
+        {/* </div> */}
+        {/* </div> */}
+    {/* <div className="gridpack-item">
       <div className="card">
         <img
           src="https://image.made-in-china.com/202f0j00AejhtbuBrWql/Deep-Customization-Luxury-Matte-Ceramic-Candle-Vessel-Container-Votive-Candle-Jars.jpg"
@@ -143,9 +153,8 @@ export default function Products() {
         </p>
         <p>$60.00</p>
         <button>Buy Now</button>
-      </div>
-    </div>
-  </div>
+      </div> */}
+    </>)
 
       }
   

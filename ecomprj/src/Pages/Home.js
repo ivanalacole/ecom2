@@ -1,12 +1,14 @@
-import "..home.js";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../home.css";
 
 export default function Home() {
     return (<div id="hero">
-    <div class="hero-content">
+    <div className="hero-content">
       .
-    <div class="hero-container">
+    <div className="hero-container">
       </div>
-      <a class="shop-btn"href="Products.html">Shop Now</a>
+      <a className="shop-btn"><NavLink to='/products'>Shop Now</NavLink></a>
     </div>
   </div>)
   }

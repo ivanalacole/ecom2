@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/products": {
+      "name": "/products",
+      "lambdaFunction": "ecomprj75239a03",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -44,11 +44,11 @@
   #hero {
     width: 100%;
     height: 90vh;
-    background-image: url("Ecom Design2.JPG");
+    background-image: url('https://i.postimg.cc/0jn7gfh3/Ecom-Design2.jpg');
     background-repeat: repeat-x;
   }
   .hero-container {
-    background-image: url("ECOMLOGO@.png");
+    background-image: url("https://i.postimg.cc/mr3YNB8B/ECOMLOGO.png");
     height: 350px;
     width: 400px;
     margin-left: 450px;
@@ -62,6 +62,7 @@
     text-decoration: none;
     font-family: 'Saira Condensed';
     color: #304945;
+    list-style: none;
   }
   .shop-btn:hover {
   color: darkorange;

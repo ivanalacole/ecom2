@@ -1,3 +1,6 @@
+import React from "react"
+import "../Contact.css"
+
 export default function Contact() {
     return ( <section id="contact">
     <div className="container">
@@ -6,7 +9,7 @@ export default function Contact() {
         If you have any questions regarding your order please enter your
         information below and we will get back to you 1-2 business days.
       </p>
-      <form>
+      <form onsubmit="sendEmail(); reset(); return false;">
         <input
           type="text"
           id="placehlder"
@@ -31,7 +34,7 @@ export default function Contact() {
           placeholder="Comments and or Questions"
         ></textarea>
 
-        <button type="submit" value="Submit">Submit</button>
+        <button id="Submitbut"type="submit" value="Submit">Submit</button>
       </form>
     </div>
   </section>)
